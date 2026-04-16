@@ -2,9 +2,9 @@ export const site = {
   name: "Vista Care",
   tagline: "Comfort That Heals",
   company: "Vistaar International CG Co. Ltd",
-  email: "support@vistacareindia.com",
-  website: "www.vistacareindia.com",
-  websiteUrl: "https://www.vistacareindia.com",
+  email: "support@vistacare.com.vn",
+  website: "vistacare.com.vn",
+  websiteUrl: "https://vistacare.com.vn",
   phones: {
     zalo: "+919702604473",
     whatsapp: "+919702274689",

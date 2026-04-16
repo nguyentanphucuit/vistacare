@@ -34,7 +34,8 @@
       "Bash(node -e \"const p = require\\('./node_modules/next-intl/package.json'\\); console.log\\(p.version\\)\")",
       "Bash(grep \"hasLocale\" /c/Users/Peter/Desktop/vista/node_modules/next-intl/dist/types/shared/*.d.ts)",
       "Bash(ls /c/Users/Peter/Desktop/vista/node_modules/next-intl/*.js)",
-      "Bash(node -e \"const fs=require\\('fs'\\);const b=fs.readFileSync\\('public/logo.webp'\\);console.log\\('size:',b.length,'bytes'\\);console.log\\('magic:',b.subarray\\(0,12\\).toString\\('hex'\\)\\);\")"
+      "Bash(node -e \"const fs=require\\('fs'\\);const b=fs.readFileSync\\('public/logo.webp'\\);console.log\\('size:',b.length,'bytes'\\);console.log\\('magic:',b.subarray\\(0,12\\).toString\\('hex'\\)\\);\")",
+      "Bash(grep -n \"font-bold tracking-tight text-brand-black\" app/\\\\[locale\\\\]/*/page.tsx app/\\\\[locale\\\\]/page.tsx)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Peter\\Desktop\\vista\\app",

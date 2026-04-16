@@ -13,7 +13,10 @@
   --color-brand-seed: #f57c00;
 
   --font-sans: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-family), ui-serif, Georgia, serif;
   --font-mono: var(--font-mono-family), ui-monospace, monospace;
+
+  --color-brand-teal: #0d9488;
 }
 
 @layer base {

@@ -25,11 +25,11 @@ export function InfoCard(props: Props) {
   return (
     <Card
       className={cn(
-        "h-full border-neutral-200 bg-white transition hover:-translate-y-0.5 hover:shadow-md",
+        "h-full rounded-2xl border-neutral-200/70 bg-white shadow-none transition duration-300 hover:-translate-y-1 hover:border-brand-mint-dark hover:shadow-xl",
         className,
       )}
     >
-      <CardContent className="flex h-full flex-col gap-4 p-6">
+      <CardContent className="flex h-full flex-col gap-4 p-7">
         {props.variant === "image" && (
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-brand-mint">
             <Image
@@ -42,7 +42,7 @@ export function InfoCard(props: Props) {
           </div>
         )}
         {props.variant === "number" && (
-          <span className="text-5xl font-bold text-brand-mint-deep/70">
+          <span className="font-serif text-5xl font-medium text-brand-mint-deep/80">
             {props.number}
           </span>
         )}

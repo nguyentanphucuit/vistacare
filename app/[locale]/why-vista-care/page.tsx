@@ -89,7 +89,7 @@ function WhyVistaCareContent() {
             <VistaCareLogo height={120} />
           </div>
           <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-black">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-brand-black leading-[1.1]">
               {t("heroTitle")}
             </h1>
             <p className="mt-6 text-base md:text-lg text-neutral-700 leading-relaxed">

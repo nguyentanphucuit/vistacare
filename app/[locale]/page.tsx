@@ -85,7 +85,7 @@ function HomePageContent() {
             <p className="text-sm font-medium uppercase tracking-wider text-brand-leaf">
               {t("heroEyebrow")}
             </p>
-            <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-black">
+            <h1 className="font-serif mt-4 text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-brand-black leading-[1.05]">
               {t("heroTitle")}
             </h1>
             <p className="mt-4 text-lg md:text-xl font-medium text-neutral-800">

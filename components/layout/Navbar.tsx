@@ -28,9 +28,9 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4">
         <Link href="/" aria-label={t("home")}>
-          <VistaCareLogo />
+          <VistaCareLogo height={44} />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
@@ -39,7 +39,7 @@ export function Navbar() {
               key={item.key}
               href={item.href}
               className={cn(
-                "rounded-md px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-brand-mint hover:text-brand-black transition",
+                "rounded-md px-4 py-2.5 text-base font-medium text-neutral-700 hover:bg-brand-mint hover:text-brand-black transition",
                 isActive(item.href) && "text-brand-black bg-brand-mint",
               )}
             >
@@ -48,11 +48,11 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <Link
             href="/contact"
-            className={cn(buttonVariants(), "hidden sm:inline-flex")}
+            className={cn(buttonVariants({ size: "lg" }), "hidden sm:inline-flex text-base")}
           >
             {t("contactUs")}
           </Link>
@@ -79,7 +79,7 @@ export function Navbar() {
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className={cn(
-                      "rounded-md px-3 py-3 text-base font-medium text-neutral-800 hover:bg-brand-mint transition",
+                      "rounded-md px-3 py-3 text-lg font-medium text-neutral-800 hover:bg-brand-mint transition",
                       isActive(item.href) && "bg-brand-mint text-brand-black",
                     )}
                   >

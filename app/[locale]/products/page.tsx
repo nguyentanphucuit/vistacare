@@ -92,7 +92,7 @@ function ProductsContent() {
       <section className="bg-gradient-to-br from-white via-brand-mint/40 to-brand-mint">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:py-24 lg:grid-cols-2 lg:items-center">
           <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-black">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-brand-black leading-[1.1]">
               {t("heroTitle")}
             </h1>
             <div className="mt-8">
