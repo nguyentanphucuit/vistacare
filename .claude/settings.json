@@ -22,7 +22,23 @@
       "Bash(npx shadcn *)",
       "Bash(curl -s \"https://ui.shadcn.com/registry/styles/new-york/form.json\")",
       "Bash(npx --yes shadcn@latest add https://ui.shadcn.com/r/form)",
-      "Bash(npx --yes shadcn@latest add https://ui.shadcn.com/r/styles/new-york/form.json)"
+      "Bash(npx --yes shadcn@latest add https://ui.shadcn.com/r/styles/new-york/form.json)",
+      "Bash(cat next.config.ts)",
+      "Bash(cat next.config.js)",
+      "Bash(cat next.config.mjs)",
+      "Bash(npm ls *)",
+      "Bash(node -e ' *)",
+      "Bash(ls public/*.svg)",
+      "Bash(node -e \"const ni = require\\('next-intl'\\); console.log\\(Object.keys\\(ni\\)\\)\")",
+      "Bash(npm view *)",
+      "Bash(node -e \"const p = require\\('./node_modules/next-intl/package.json'\\); console.log\\(p.version\\)\")",
+      "Bash(grep \"hasLocale\" /c/Users/Peter/Desktop/vista/node_modules/next-intl/dist/types/shared/*.d.ts)",
+      "Bash(ls /c/Users/Peter/Desktop/vista/node_modules/next-intl/*.js)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Peter\\Desktop\\vista\\app",
+      "c:\\Users\\Peter\\Desktop\\vista\\app\\[locale]",
+      "C:\\Users\\Peter\\Desktop\\vista\\app\\[locale]"
     ]
   }
 }
