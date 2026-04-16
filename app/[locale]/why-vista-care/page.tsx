@@ -86,7 +86,7 @@ function WhyVistaCareContent() {
       <section className="bg-gradient-to-br from-white via-brand-mint/40 to-brand-mint">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:py-24 lg:grid-cols-2 lg:items-center">
           <div className="flex items-center justify-center md:justify-start">
-            <VistaCareLogo className="scale-[2.2] origin-left md:origin-center" showWordmark />
+            <VistaCareLogo height={120} />
           </div>
           <div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-black">

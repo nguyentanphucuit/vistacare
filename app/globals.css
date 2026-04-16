@@ -12,8 +12,8 @@
   --color-brand-leaf: #2e7d32;
   --color-brand-seed: #f57c00;
 
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-sans: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-family), ui-monospace, monospace;
 }
 
 @layer base {
