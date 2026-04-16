@@ -8,7 +8,9 @@
       "Bash(mv vista-init/* vista/)",
       "Bash(rmdir vista-init *)",
       "Bash(shopt -u dotglob)",
-      "Bash(node -p \"require\\('./package.json'\\).dependencies.next\")"
+      "Bash(node -p \"require\\('./package.json'\\).dependencies.next\")",
+      "Bash(npx --yes shadcn@latest init -y -d)",
+      "Bash(npm config *)"
     ]
   }
 }
