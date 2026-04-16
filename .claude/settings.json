@@ -10,7 +10,19 @@
       "Bash(shopt -u dotglob)",
       "Bash(node -p \"require\\('./package.json'\\).dependencies.next\")",
       "Bash(npx --yes shadcn@latest init -y -d)",
-      "Bash(npm config *)"
+      "Bash(npm config *)",
+      "Bash(npx --yes shadcn@latest add button card accordion table sheet form input textarea label sonner dropdown-menu navigation-menu)",
+      "Bash(npx --yes shadcn@latest add form)",
+      "Bash(npx --yes shadcn@latest add form --overwrite)",
+      "Bash(npx --yes shadcn@latest add --help)",
+      "Bash(npx --yes shadcn@latest add form -y)",
+      "Bash(npx --yes shadcn@latest add form --dry-run)",
+      "Bash(npx --yes shadcn@latest add form --view)",
+      "Bash(node -p \"require\\('shadcn/package.json'\\).version\")",
+      "Bash(npx shadcn *)",
+      "Bash(curl -s \"https://ui.shadcn.com/registry/styles/new-york/form.json\")",
+      "Bash(npx --yes shadcn@latest add https://ui.shadcn.com/r/form)",
+      "Bash(npx --yes shadcn@latest add https://ui.shadcn.com/r/styles/new-york/form.json)"
     ]
   }
 }
