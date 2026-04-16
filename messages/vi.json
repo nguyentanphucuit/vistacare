@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "whyVistaCare": "Vì sao Vista Care",
+    "products": "Sản phẩm",
+    "contactUs": "Liên hệ",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
+  },
+  "cta": {
+    "contactNow": "Liên hệ ngay",
+    "knowMore": "Tìm hiểu thêm",
+    "knowMoreAboutUs": "Tìm hiểu thêm về chúng tôi",
+    "learnMore": "Xem thêm",
+    "callNow": "Gọi ngay",
+    "emailUs": "Gửi email"
+  },
+  "home": {
+    "heroEyebrow": "Vớ y khoa áp lực",
+    "heroTitle": "SỰ THOẢI MÁI CHỮA LÀNH",
+    "heroSubtitle": "Thiết kế để tạo áp lực có cấp độ. Hồi phục tốt hơn. Thoải mái mỗi ngày.",
+    "heroBody": "Trusted by medical professionals and individuals across India and Vietnam. Vista Care Compression Garments are designed to promote better circulation, reduce swelling, and accelerate healing.",
+    "aboutSnippet": "We at Vistaar International CG Co. Ltd are manufactures of Vista Care Brand of Compression Garments. We have more than Two decades of experience in manufacture medical-grade (Class I & II) stockings and sleeves designed to support blood circulation, reduce swelling, and accelerate recovery from a wide range of venous disorders and lymphatic conditions.",
+    "whoShouldUseTitle": "Ai nên dùng vớ áp lực?",
+    "whyChooseTitle": "Vì sao chọn Vista Care?",
+    "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
+    "productRangeIntro": "Chúng tôi sản xuất vớ áp lực Class I và Class II với nhiều dòng sản phẩm:",
+    "videoTitle": "Trải nghiệm sức mạnh của liệu pháp áp lực y khoa"
+  },
+  "about": {
+    "heroTitle": "Hơn hai thập kỷ kinh nghiệm chữa lành bằng vớ áp lực",
+    "heroBody": "At Vista Care, we don't just manufacture compression garments — we deliver therapeutic solutions backed by two decades of clinical insight and compassionate care, to enhance recovery, prevent complications, and improve quality of life through precise, medical-grade compression garments designed for real comfort and quick healing.",
+    "whatWeDoTitle": "Những gì chúng tôi làm",
+    "whatWeDoIntro": "Chúng tôi thiết kế và sản xuất:",
+    "whatWeDoOutro": "Each garment is developed using specially engineered cotton-rich, breathable, and skin-safe fabric optimized to match individual medical needs with comfort, mobility, and climate in mind.",
+    "approachTitle": "Cách tiếp cận",
+    "approachSubtitle": "Quy trình của chúng tôi dựa trên sự chính xác y khoa và chăm sóc cá nhân hóa",
+    "promiseTitle": "Cam kết của chúng tôi",
+    "promiseIntro": "Dù là quản lý bệnh mạn tính hay hỗ trợ hồi phục sau phẫu thuật, chúng tôi cam kết:",
+    "presenceTitle": "Sự hiện diện",
+    "presenceBody": "Headquartered in Mumbai, with operations in New Delhi and now in Ho Chi Minh City, Vietnam, Vista Care is evolving into a global compression care provider, serving patients, medical professionals, and wellness centers."
+  },
+  "why": {
+    "heroTitle": "ĐẶC ĐIỂM CỦA VỚ VISTA CARE",
+    "heroBody": "VISTA CARE medical compression stockings are engineered to provide graduated compression to the affected limb so as to enable effective blood flow.",
+    "comfortTitle": "SỰ THOẢI MÁI CHỮA LÀNH",
+    "comfortBody": "VISTA CARE medical compression stockings are designed with specially developed cotton fabric.",
+    "comparisonTitle": "VÌ SAO CHỌN VỚ Y KHOA VISTA CARE?"
+  },
+  "products": {
+    "heroTitle": "Vớ áp lực y khoa — Vừa vặn, chữa lành, thoải mái.",
+    "chartTitle": "Bảng đo kích thước vớ áp lực",
+    "faqTitle": "Câu hỏi thường gặp"
+  },
+  "contact": {
+    "heroTitle": "Liên hệ",
+    "heroSubtitle": "Chúng tôi rất mong nhận được tin của bạn. Gửi tin nhắn và chúng tôi sẽ phản hồi sớm nhất.",
+    "form": {
+      "name": "Họ tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "subject": "Tiêu đề",
+      "message": "Nội dung",
+      "submit": "Gửi tin nhắn",
+      "successTitle": "Đã gửi",
+      "successBody": "Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất."
+    },
+    "info": {
+      "title": "Liên hệ với chúng tôi",
+      "company": "Vistaar International CG Co. Ltd",
+      "zalo": "Zalo",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "website": "Website",
+      "addresses": "Văn phòng"
+    }
+  },
+  "footer": {
+    "tagline": "Sự thoải mái chữa lành",
+    "rights": "Đã đăng ký bản quyền."
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  }
+}

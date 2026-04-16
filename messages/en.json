@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "whyVistaCare": "Why Vista Care",
+    "products": "Products",
+    "contactUs": "Contact Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "cta": {
+    "contactNow": "Contact Now",
+    "knowMore": "Know More",
+    "knowMoreAboutUs": "Know more about us",
+    "learnMore": "Learn More",
+    "callNow": "Call Now",
+    "emailUs": "Email Us"
+  },
+  "home": {
+    "heroEyebrow": "Medical Compression Garments",
+    "heroTitle": "COMFORT THAT HEALS",
+    "heroSubtitle": "Engineered for Graduated Compression. Enhanced Recovery. Everyday Comfort.",
+    "heroBody": "Trusted by medical professionals and individuals across India and Vietnam. Vista Care Compression Garments are designed to promote better circulation, reduce swelling, and accelerate healing.",
+    "aboutSnippet": "We at Vistaar International CG Co. Ltd are manufactures of Vista Care Brand of Compression Garments. We have more than Two decades of experience in manufacture medical-grade (Class I & II) stockings and sleeves designed to support blood circulation, reduce swelling, and accelerate recovery from a wide range of venous disorders and lymphatic conditions.",
+    "whoShouldUseTitle": "Who Should Use Compression Garments?",
+    "whyChooseTitle": "Why Choose Vista Care?",
+    "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
+    "productRangeIntro": "We manufacture Class I & Class II compression garments in multiple ranges:",
+    "videoTitle": "Experience the Power of Medical Compression"
+  },
+  "about": {
+    "heroTitle": "More than Two decades of Experience in Healing Through Compression Garments",
+    "heroBody": "At Vista Care, we don't just manufacture compression garments — we deliver therapeutic solutions backed by two decades of clinical insight and compassionate care, to enhance recovery, prevent complications, and improve quality of life through precise, medical-grade compression garments designed for real comfort and quick healing.",
+    "whatWeDoTitle": "What We Do",
+    "whatWeDoIntro": "We design and manufacture:",
+    "whatWeDoOutro": "Each garment is developed using specially engineered cotton-rich, breathable, and skin-safe fabric optimized to match individual medical needs with comfort, mobility, and climate in mind.",
+    "approachTitle": "Our Approach",
+    "approachSubtitle": "Our process is rooted in clinical precision and personal care",
+    "promiseTitle": "Our Promise",
+    "promiseIntro": "Whether it's managing chronic conditions or aiding post-surgical recovery, we are committed to:",
+    "presenceTitle": "Our Presence",
+    "presenceBody": "Headquartered in Mumbai, with operations in New Delhi and now in Ho Chi Minh City, Vietnam, Vista Care is evolving into a global compression care provider, serving patients, medical professionals, and wellness centers."
+  },
+  "why": {
+    "heroTitle": "FEATURES OF VISTA CARE STOCKINGS",
+    "heroBody": "VISTA CARE medical compression stockings are engineered to provide graduated compression to the affected limb so as to enable effective blood flow.",
+    "comfortTitle": "COMFORT THAT HEALS",
+    "comfortBody": "VISTA CARE medical compression stockings are designed with specially developed cotton fabric.",
+    "comparisonTitle": "WHY VISTA CARE MEDICAL COMPRESSION STOCKINGS?"
+  },
+  "products": {
+    "heroTitle": "Medical Compression Garments That Fits You, Heals You with Comfort.",
+    "chartTitle": "Compression Garment Measurement Chart",
+    "faqTitle": "Frequently Asked Questions"
+  },
+  "contact": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "successTitle": "Message sent",
+      "successBody": "Thanks! We'll be in touch soon."
+    },
+    "info": {
+      "title": "Get in touch",
+      "company": "Vistaar International CG Co. Ltd",
+      "zalo": "Zalo",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "website": "Website",
+      "addresses": "Our Offices"
+    }
+  },
+  "footer": {
+    "tagline": "Comfort That Heals",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  }
+}
