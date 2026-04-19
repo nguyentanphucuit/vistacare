@@ -23,7 +23,7 @@ export const site = {
 
 export const navItems = [
   { key: "home", href: "/" },
-  { key: "about", href: "/about" },
-  { key: "whyVistaCare", href: "/why-vista-care" },
   { key: "products", href: "/products" },
+  { key: "howToOrder", href: "/how-to-order" },
+  { key: "measurement", href: "/measurement" },
 ] as const;

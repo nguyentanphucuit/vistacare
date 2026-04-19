@@ -7,7 +7,7 @@ type Props = {
   showTagline?: boolean;
 };
 
-const ASPECT = 300 / 129;
+const ASPECT = 1280 / 600;
 
 export function VistaCareLogo({
   className,
@@ -18,7 +18,7 @@ export function VistaCareLogo({
   return (
     <div className={cn("flex items-center gap-3", className)}>
       <Image
-        src="/logo.webp"
+        src="/logo.png"
         alt="Vista Care"
         width={width}
         height={height}

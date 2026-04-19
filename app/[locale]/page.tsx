@@ -5,13 +5,8 @@ import { setRequestLocale } from "next-intl/server";
 import { buttonVariants } from "@/components/ui/button";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { InfoCard } from "@/components/sections/InfoCard";
-import { ContactCTABlock } from "@/components/sections/ContactCTABlock";
 import { cn } from "@/lib/utils";
-import {
-  ArrowRight,
-  CheckCircle2,
-  PlayCircle,
-} from "lucide-react";
+import { ArrowRight, PlayCircle, Quote } from "lucide-react";
 
 export default async function HomePage({
   params,
@@ -27,77 +22,70 @@ function HomePageContent() {
   const t = useTranslations("home");
   const tCta = useTranslations("cta");
 
-  const whoShouldUse = [
+  const products = [
     {
-      title: "Elderly Individuals",
-      body: "Prevent venous disorders, manage pain & swelling.",
+      title: "Below Knee Stockings",
+      body: "Graduated compression below the knee for daily wear, long flights, and mild venous insufficiency.",
     },
     {
-      title: "Pregnant Women",
-      body: "Relieve leg fatigue, swelling, and varicose veins.",
+      title: "Thigh High Stockings",
+      body: "Extended coverage for advanced venous conditions, varicose veins, and post-surgical recovery.",
     },
     {
-      title: "Working Professionals",
-      body: "Long sitting hours. Prevent DVT, soreness of muscles.",
-    },
-    {
-      title: "Athletes & Travelers",
-      body: "Reduce muscle strain. Enhance performance.",
+      title: "Arm Sleeves & Body Garments",
+      body: "Custom compression for upper-limb recovery, lymphoedema, and post-burn keloid management.",
     },
   ];
 
-  const whyChoose = [
+  const testimonials = [
     {
-      number: "01",
-      title: "Graduated Compression Support",
-      body: "Delivers graduated compression to improve blood flow, reduce swelling, and lower the risk of clot formation.",
+      quote:
+        "Vista Care's graduated compression has become my go-to recommendation for post-surgical DVT prevention. The fit and durability are clinically superior.",
+      name: "Dr. Priya Sharma",
+      role: "Vascular Surgeon, Mumbai",
     },
     {
-      number: "02",
-      title: "All-Season Adaptive Medical Fabric",
-      body: "Made with soft, breathable, antimicrobial fabric that is cotton-rich, water-repellent, and safe for all skin types.",
+      quote:
+        "I've worn Vista Care stockings throughout my pregnancy. My leg fatigue and swelling are gone, and the fabric stays comfortable all day.",
+      name: "Linh Nguyen",
+      role: "Patient, Ho Chi Minh City",
     },
     {
-      number: "03",
-      title: "Custom-Fit Design (Class I & II)",
-      body: "Each garment is measured and custom sized to match your body's shape for optimal medical effectiveness.",
+      quote:
+        "The quality and consistency of Vistaar's garments have made them our preferred supplier for over three years. Our patients notice the difference.",
+      name: "Rohit Kumar",
+      role: "Clinical Director, New Delhi",
     },
-    {
-      number: "04",
-      title: "Clinically Backed",
-      body: "Trusted for treatment and prevention of DVT, varicose veins, ulcers, swelling, and post-surgical conditions.",
-    },
-  ];
-
-  const productRanges = [
-    "Below Knee Stockings",
-    "Thigh High Stockings",
-    "Full Leg Stockings",
-    "Arm Sleeves & Body Garments",
   ];
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-white via-brand-mint/40 to-brand-mint">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:py-24 lg:grid-cols-2 lg:items-center">
+      {/* 1. Hero — full screen */}
+      <section className="bg-gradient-to-br from-brand-navy-light via-white to-brand-green-light">
+        <div className="mx-auto grid min-h-[calc(100svh-5rem)] max-w-7xl items-center gap-12 px-4 py-16 md:py-24 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium uppercase tracking-wider text-brand-leaf">
               {t("heroEyebrow")}
             </p>
-            <h1 className="font-serif mt-4 text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-brand-black leading-[1.05]">
+            <h1 className="mt-4 text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-brand-navy leading-[1.05]">
               {t("heroTitle")}
             </h1>
-            <p className="mt-4 text-lg md:text-xl font-medium text-neutral-800">
+            <p className="mt-4 text-xl md:text-2xl font-medium text-neutral-800">
               {t("heroSubtitle")}
             </p>
-            <p className="mt-6 text-base text-neutral-600 leading-relaxed max-w-xl">
+            <p className="mt-6 max-w-xl text-xl text-neutral-600 leading-relaxed">
               {t("heroBody")}
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/contact" className={cn(buttonVariants({ size: "lg" }))}>
                 {tCta("contactNow")}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+              <Link
+                href="/products"
+                className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+              >
+                {tCta("knowMore")}
               </Link>
             </div>
           </div>
@@ -114,7 +102,7 @@ function HomePageContent() {
         </div>
       </section>
 
-      {/* About snippet */}
+      {/* 2. About Us */}
       <section className="py-16 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-mint">
@@ -130,12 +118,12 @@ function HomePageContent() {
             <p className="text-sm font-medium uppercase tracking-wider text-brand-leaf">
               About Vista Care
             </p>
-            <p className="mt-4 text-lg text-neutral-700 leading-relaxed">
+            <p className="mt-4 text-xl text-neutral-700 leading-relaxed">
               {t("aboutSnippet")}
             </p>
             <Link
               href="/about"
-              className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-brand-black hover:text-brand-leaf"
+              className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-brand-navy hover:text-brand-leaf"
             >
               {tCta("knowMoreAboutUs")}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -144,91 +132,78 @@ function HomePageContent() {
         </div>
       </section>
 
-      {/* Who Should Use */}
+      {/* 3. 3 Products showcase */}
       <section className="bg-neutral-50 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4">
-          <SectionHeading title={t("whoShouldUseTitle")} />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {whoShouldUse.map((c) => (
+          <SectionHeading
+            title={t("productsShowcaseTitle")}
+            subtitle={t("productsShowcaseIntro")}
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {products.map((p) => (
               <InfoCard
-                key={c.title}
+                key={p.title}
                 variant="image"
                 image="/placeholder.svg"
-                imageAlt={c.title}
-                title={c.title}
-                body={c.body}
+                imageAlt={p.title}
+                title={p.title}
+                body={p.body}
                 href="/products"
                 ctaLabel={tCta("learnMore")}
               />
             ))}
           </div>
+          <div className="mt-10 flex justify-center">
+            <Link
+              href="/products"
+              className={cn(buttonVariants({ size: "lg" }))}
+            >
+              {tCta("knowMore")}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Why Choose */}
-      <section className="bg-brand-mint py-16 md:py-24">
+      {/* 4. Testimonials */}
+      <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4">
           <SectionHeading
-            title={t("whyChooseTitle")}
-            subtitle={t("whyChooseIntro")}
+            title={t("testimonialsTitle")}
+            subtitle={t("testimonialsIntro")}
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {whyChoose.map((c) => (
-              <InfoCard
-                key={c.number}
-                variant="number"
-                number={c.number}
-                title={c.title}
-                body={c.body}
-              />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {testimonials.map((tm) => (
+              <figure
+                key={tm.name}
+                className="flex h-full flex-col gap-5 rounded-2xl border border-neutral-200/70 bg-white p-7 shadow-none transition duration-300 hover:-translate-y-1 hover:border-brand-mint-dark hover:shadow-xl"
+              >
+                <Quote
+                  className="h-6 w-6 text-brand-leaf"
+                  aria-hidden="true"
+                />
+                <blockquote className="flex-1 text-xl text-neutral-700 leading-relaxed">
+                  "{tm.quote}"
+                </blockquote>
+                <figcaption className="border-t border-neutral-200 pt-4">
+                  <p className="font-semibold text-brand-navy">{tm.name}</p>
+                  <p className="text-sm text-neutral-500">{tm.role}</p>
+                </figcaption>
+              </figure>
             ))}
           </div>
-          <ContactCTABlock />
         </div>
       </section>
 
-      {/* Product Range */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:items-center">
-          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-brand-mint">
-            <Image
-              src="/placeholder.svg"
-              alt="Mannequin wearing Vista Care compression stockings"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <SectionHeading
-              title="Product Range"
-              subtitle={t("productRangeIntro")}
-              align="left"
-            />
-            <ul className="mt-6 space-y-3">
-              {productRanges.map((p) => (
-                <li key={p} className="flex items-center gap-3 text-base">
-                  <CheckCircle2 className="h-5 w-5 text-brand-leaf" aria-hidden="true" />
-                  {p}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8">
-              <Link href="/products" className={cn(buttonVariants({ size: "lg" }))}>
-                {tCta("knowMore")}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video */}
+      {/* 5. Video */}
       <section className="bg-brand-mint/40 py-16 md:py-24">
         <div className="mx-auto max-w-5xl px-4">
           <SectionHeading title={t("videoTitle")} />
           <div className="mt-12 flex aspect-video items-center justify-center overflow-hidden rounded-2xl border border-brand-mint-dark bg-white">
-            <PlayCircle className="h-20 w-20 text-brand-leaf" aria-hidden="true" />
+            <PlayCircle
+              className="h-20 w-20 text-brand-leaf"
+              aria-hidden="true"
+            />
           </div>
         </div>
       </section>

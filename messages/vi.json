@@ -2,8 +2,9 @@
   "nav": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
-    "whyVistaCare": "Vì sao Vista Care",
+    "howToOrder": "Cách đặt hàng?",
     "products": "Sản phẩm",
+    "measurement": "Đo kích thước",
     "contactUs": "Liên hệ",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu"
@@ -26,6 +27,10 @@
     "whyChooseTitle": "Vì sao chọn Vista Care?",
     "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
     "productRangeIntro": "Chúng tôi sản xuất vớ áp lực Class I và Class II với nhiều dòng sản phẩm:",
+    "productsShowcaseTitle": "Các dòng vớ áp lực y khoa",
+    "productsShowcaseIntro": "Hỗ trợ y khoa cho mọi nhu cầu — từ sử dụng hằng ngày đến phục hồi sau phẫu thuật.",
+    "testimonialsTitle": "Được tin dùng bởi bác sĩ & bệnh nhân",
+    "testimonialsIntro": "Chia sẻ từ các bác sĩ, phòng khám và người dùng về Vista Care.",
     "videoTitle": "Trải nghiệm sức mạnh của liệu pháp áp lực y khoa"
   },
   "about": {
@@ -41,6 +46,37 @@
     "presenceTitle": "Sự hiện diện",
     "presenceBody": "Headquartered in Mumbai, with operations in New Delhi and now in Ho Chi Minh City, Vietnam, Vista Care is evolving into a global compression care provider, serving patients, medical professionals, and wellness centers."
   },
+  "howToOrder": {
+    "heroTitle": "Cách đặt hàng vớ áp lực Vista Care",
+    "heroBody": "Chọn sản phẩm, đo kích thước chính xác, điền đơn đặt hàng — chúng tôi sẽ lo phần còn lại, từ tư vấn đến giao hàng.",
+    "catalogTitle": "1. Xem danh mục",
+    "catalogSubtitle": "Khám phá đầy đủ các dòng vớ áp lực y khoa của chúng tôi.",
+    "howToChooseTitle": "2. Cách chọn sản phẩm phù hợp",
+    "howToChooseSubtitle": "Ba bước đơn giản để chọn sản phẩm đúng với nhu cầu y khoa của bạn.",
+    "formsTitle": "3. Các mẫu đơn đặt hàng",
+    "formsSubtitle": "Chọn đơn theo danh mục sản phẩm. Mỗi đơn liệt kê các kích thước và câu hỏi cần cung cấp.",
+    "tutorialTitle": "4. Hướng dẫn đặt hàng",
+    "tutorialSubtitle": "Video ngắn hướng dẫn toàn bộ quy trình đặt hàng.",
+    "howToUseTitle": "5. Cách sử dụng sản phẩm",
+    "howToUseSubtitle": "Hướng dẫn mặc và bảo quản đúng để phát huy hiệu quả điều trị.",
+    "orderForm": {
+      "orderingFor": "Đặt hàng cho",
+      "name": "Họ và tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "compressionClass": "Class",
+      "custom": "Tùy chỉnh",
+      "size": "Size",
+      "quantity": "Số lượng",
+      "address": "Địa chỉ giao hàng",
+      "measurements": "Kích thước",
+      "notes": "Ghi chú thêm",
+      "notesPlaceholder": "Yêu cầu đặc biệt, ưu tiên giao hàng, thông tin y tế…",
+      "submit": "Gửi đơn đặt hàng",
+      "successTitle": "Đã nhận đơn",
+      "successBody": "Cảm ơn bạn! Đội ngũ sẽ xác nhận qua email/WhatsApp sớm nhất."
+    }
+  },
   "why": {
     "heroTitle": "ĐẶC ĐIỂM CỦA VỚ VISTA CARE",
     "heroBody": "VISTA CARE medical compression stockings are engineered to provide graduated compression to the affected limb so as to enable effective blood flow.",
@@ -48,10 +84,28 @@
     "comfortBody": "VISTA CARE medical compression stockings are designed with specially developed cotton fabric.",
     "comparisonTitle": "VÌ SAO CHỌN VỚ Y KHOA VISTA CARE?"
   },
+  "measurementPage": {
+    "heroTitle": "Bảng đo kích thước vớ áp lực",
+    "heroBody": "Tìm size vừa vặn với bảng đo của chúng tôi. Nên đo vào buổi sáng khi chân ít sưng nhất, dùng thước dây mềm vừa khít nhưng không siết.",
+    "howToTitle": "Cách đo",
+    "howToSubtitle": "Các kích thước vòng cần thiết để vừa vặn tối ưu.",
+    "chartTitle": "Bảng size",
+    "chartNote": "Bảng size mang tính tham khảo. Để may đo riêng vui lòng liên hệ đội ngũ của chúng tôi."
+  },
   "products": {
     "heroTitle": "Vớ áp lực y khoa — Vừa vặn, chữa lành, thoải mái.",
     "chartTitle": "Bảng đo kích thước vớ áp lực",
-    "faqTitle": "Câu hỏi thường gặp"
+    "faqTitle": "Câu hỏi thường gặp",
+    "catalog": {
+      "title": "Danh mục sản phẩm",
+      "subtitle": "Khám phá đầy đủ các dòng vớ áp lực y khoa của chúng tôi.",
+      "filterByCategory": "Lọc theo danh mục",
+      "filter": "Bộ lọc",
+      "allProducts": "Tất cả sản phẩm",
+      "searchPlaceholder": "Tìm sản phẩm...",
+      "showingResults": "{count, plural, =0 {Không có sản phẩm} other {# sản phẩm}}",
+      "noResults": "Không tìm thấy sản phẩm phù hợp."
+    }
   },
   "contact": {
     "heroTitle": "Liên hệ",

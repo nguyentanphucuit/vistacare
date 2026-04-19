@@ -42,7 +42,7 @@ export function InfoCard(props: Props) {
           </div>
         )}
         {props.variant === "number" && (
-          <span className="font-serif text-5xl font-medium text-brand-mint-deep/80">
+          <span className="text-6xl font-medium text-brand-mint-deep/80">
             {props.number}
           </span>
         )}
@@ -51,12 +51,12 @@ export function InfoCard(props: Props) {
             <props.icon className="h-6 w-6" aria-hidden="true" />
           </span>
         )}
-        <h3 className="text-xl font-semibold text-brand-black">{title}</h3>
-        <p className="text-sm text-neutral-600 leading-relaxed flex-1">{body}</p>
+        <h3 className="text-xl font-semibold text-brand-navy">{title}</h3>
+        <p className="text-xl text-neutral-600 leading-relaxed flex-1">{body}</p>
         {href && (
           <Link
             href={href}
-            className="inline-flex items-center gap-1 text-sm font-medium text-brand-black hover:text-brand-leaf"
+            className="inline-flex items-center gap-1 text-sm font-medium text-brand-navy hover:text-brand-leaf"
           >
             {ctaLabel ?? "Learn More"}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

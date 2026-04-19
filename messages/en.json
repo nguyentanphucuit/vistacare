@@ -2,8 +2,9 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "whyVistaCare": "Why Vista Care",
+    "howToOrder": "How to order?",
     "products": "Products",
+    "measurement": "Measurement",
     "contactUs": "Contact Us",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -26,6 +27,10 @@
     "whyChooseTitle": "Why Choose Vista Care?",
     "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
     "productRangeIntro": "We manufacture Class I & Class II compression garments in multiple ranges:",
+    "productsShowcaseTitle": "Our Medical Compression Garments",
+    "productsShowcaseIntro": "Medical-grade support for every need — from daily wear to post-surgical recovery.",
+    "testimonialsTitle": "Trusted by Professionals & Patients",
+    "testimonialsIntro": "What doctors, clinics, and everyday wearers say about Vista Care.",
     "videoTitle": "Experience the Power of Medical Compression"
   },
   "about": {
@@ -41,6 +46,37 @@
     "presenceTitle": "Our Presence",
     "presenceBody": "Headquartered in Mumbai, with operations in New Delhi and now in Ho Chi Minh City, Vietnam, Vista Care is evolving into a global compression care provider, serving patients, medical professionals, and wellness centers."
   },
+  "howToOrder": {
+    "heroTitle": "How to order Vista Care compression garments",
+    "heroBody": "Choose your product, take the right measurements, fill the order form, and we will handle the rest — from fitting advice to delivery.",
+    "catalogTitle": "1. Browse the catalog",
+    "catalogSubtitle": "Explore our full range of medical-grade compression garments.",
+    "howToChooseTitle": "2. How to choose the right product",
+    "howToChooseSubtitle": "Three simple checkpoints to land on the garment that fits your medical need.",
+    "formsTitle": "3. Order forms",
+    "formsSubtitle": "Select the form that matches your product category. Each form lists the required measurements and fit questions.",
+    "tutorialTitle": "4. Ordering tutorial",
+    "tutorialSubtitle": "A short walkthrough of the full ordering process.",
+    "howToUseTitle": "5. How to use your garment",
+    "howToUseSubtitle": "Proper donning and care to maximise comfort and therapeutic effect.",
+    "orderForm": {
+      "orderingFor": "Ordering for",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "compressionClass": "Class",
+      "custom": "Custom",
+      "size": "Size",
+      "quantity": "Qty",
+      "address": "Delivery address",
+      "measurements": "Measurements",
+      "notes": "Additional notes",
+      "notesPlaceholder": "Any special requests, delivery preferences, or medical info…",
+      "submit": "Submit order",
+      "successTitle": "Order received",
+      "successBody": "Thanks! Our team will confirm your order by email/WhatsApp shortly."
+    }
+  },
   "why": {
     "heroTitle": "FEATURES OF VISTA CARE STOCKINGS",
     "heroBody": "VISTA CARE medical compression stockings are engineered to provide graduated compression to the affected limb so as to enable effective blood flow.",
@@ -48,10 +84,28 @@
     "comfortBody": "VISTA CARE medical compression stockings are designed with specially developed cotton fabric.",
     "comparisonTitle": "WHY VISTA CARE MEDICAL COMPRESSION STOCKINGS?"
   },
+  "measurementPage": {
+    "heroTitle": "Compression Garment Measurement Chart",
+    "heroBody": "Find the right fit with our size chart. Measure in the morning when swelling is minimal, and use a soft measuring tape held snug but not tight.",
+    "howToTitle": "How to measure",
+    "howToSubtitle": "Key circumferences we need for the perfect fit.",
+    "chartTitle": "Size chart",
+    "chartNote": "Chart is indicative. For custom-fit garments please contact our team."
+  },
   "products": {
     "heroTitle": "Medical Compression Garments That Fits You, Heals You with Comfort.",
     "chartTitle": "Compression Garment Measurement Chart",
-    "faqTitle": "Frequently Asked Questions"
+    "faqTitle": "Frequently Asked Questions",
+    "catalog": {
+      "title": "Product Catalog",
+      "subtitle": "Browse our full range of medical-grade compression garments.",
+      "filterByCategory": "Filter by Category",
+      "filter": "Filter",
+      "allProducts": "All Products",
+      "searchPlaceholder": "Search products...",
+      "showingResults": "{count, plural, =0 {No products} one {# product} other {# products}}",
+      "noResults": "No products match your search."
+    }
   },
   "contact": {
     "heroTitle": "Contact Us",

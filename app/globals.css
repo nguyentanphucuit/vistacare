@@ -5,34 +5,56 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-brand-mint: #e0f4f4;
-  --color-brand-mint-dark: #b8e0e0;
-  --color-brand-mint-deep: #0fa9a9;
+  /* Core brand palette: navy 50% · green 40% · orange 10% */
+  --color-brand-navy: #303a81;
+  --color-brand-navy-dark: #232a60;
+  --color-brand-navy-light: #e8ebf5;
+
+  --color-brand-green: #00a64c;
+  --color-brand-green-dark: #00803a;
+  --color-brand-green-light: #e0f4e8;
+
+  --color-brand-orange: #ef7b24;
+  --color-brand-orange-dark: #c45e10;
+  --color-brand-orange-light: #fde5d1;
+
   --color-brand-black: #000000;
-  --color-brand-leaf: #2e7d32;
-  --color-brand-seed: #f57c00;
 
-  --font-sans: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif-family), ui-serif, Georgia, serif;
+  /* Legacy aliases — now mapped to the new palette */
+  --color-brand-leaf: #00a64c;
+  --color-brand-seed: #ef7b24;
+  --color-brand-mint: #e0f4e8;
+  --color-brand-mint-dark: #b8dfc4;
+  --color-brand-mint-deep: #00a64c;
+  --color-brand-teal: #303a81;
+
   --font-mono: var(--font-mono-family), ui-monospace, monospace;
-
-  --color-brand-teal: #0d9488;
 }
 
 @layer base {
   * { border-color: var(--color-border);
     @apply border-border outline-ring/50; }
-  html { scroll-behavior: smooth;
-    @apply font-sans; }
+  html,
+  body {
+    font-family: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     -webkit-font-smoothing: antialiased;
     @apply bg-background text-foreground;
+  }
+  /* base-ui portals render outside html; ensure they inherit the app font */
+  [data-instance-id],
+  [data-instance-id] * {
+    font-family: inherit;
   }
   h1, h2, h3, h4 { letter-spacing: -0.01em; }
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-sans-family);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -80,7 +102,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #303a81;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);

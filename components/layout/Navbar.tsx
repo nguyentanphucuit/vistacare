@@ -39,8 +39,9 @@ export function Navbar() {
               key={item.key}
               href={item.href}
               className={cn(
-                "rounded-md px-4 py-2.5 text-base font-medium text-neutral-700 hover:bg-brand-mint hover:text-brand-black transition",
-                isActive(item.href) && "text-brand-black bg-brand-mint",
+                "rounded-md px-4 py-2.5 text-base font-medium text-neutral-700 hover:bg-brand-navy-light hover:text-brand-navy transition",
+                isActive(item.href) &&
+                  "bg-brand-orange-light text-brand-orange",
               )}
             >
               {t(item.key)}
@@ -79,8 +80,9 @@ export function Navbar() {
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className={cn(
-                      "rounded-md px-3 py-3 text-lg font-medium text-neutral-800 hover:bg-brand-mint transition",
-                      isActive(item.href) && "bg-brand-mint text-brand-black",
+                      "rounded-md px-3 py-3 text-lg font-medium text-neutral-800 hover:bg-brand-navy-light transition",
+                      isActive(item.href) &&
+                        "bg-brand-orange-light text-brand-orange",
                     )}
                   >
                     {t(item.key)}

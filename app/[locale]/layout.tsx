@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { WelcomeDialog } from "@/components/layout/WelcomeDialog";
 import { Toaster } from "@/components/ui/sonner";
 
 export function generateStaticParams() {
@@ -28,6 +29,7 @@ export default async function LocaleLayout({
         <main className="flex-1">{children}</main>
         <Footer />
       </div>
+      <WelcomeDialog />
       <Toaster />
     </NextIntlClientProvider>
   );

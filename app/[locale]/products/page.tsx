@@ -4,20 +4,13 @@ import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { buttonVariants } from "@/components/ui/button";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { SectionHeading } from "@/components/sections/SectionHeading";
+import { ProductsCatalog } from "@/components/products/ProductsCatalog";
 import { cn } from "@/lib/utils";
 
 export default async function ProductsPage({
@@ -33,19 +26,6 @@ export default async function ProductsPage({
 function ProductsContent() {
   const t = useTranslations("products");
   const tCta = useTranslations("cta");
-
-  const sizes: Array<{
-    size: string;
-    ankle: string;
-    calf: string;
-    thigh: string;
-  }> = [
-    { size: "S", ankle: "18-21 cm", calf: "28-33 cm", thigh: "45-53 cm" },
-    { size: "M", ankle: "21-24 cm", calf: "33-38 cm", thigh: "53-61 cm" },
-    { size: "L", ankle: "24-27 cm", calf: "38-43 cm", thigh: "61-69 cm" },
-    { size: "XL", ankle: "27-30 cm", calf: "43-48 cm", thigh: "69-77 cm" },
-    { size: "XXL", ankle: "30-33 cm", calf: "48-53 cm", thigh: "77-85 cm" },
-  ];
 
   const faqs = [
     {
@@ -89,10 +69,10 @@ function ProductsContent() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-white via-brand-mint/40 to-brand-mint">
+      <section className="bg-gradient-to-br from-brand-navy-light via-white to-brand-green-light">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:py-24 lg:grid-cols-2 lg:items-center">
           <div>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-brand-black leading-[1.1]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-brand-navy leading-[1.1]">
               {t("heroTitle")}
             </h1>
             <div className="mt-8">
@@ -117,47 +97,23 @@ function ProductsContent() {
         </div>
       </section>
 
-      {/* Measurement chart */}
+      {/* Product Catalog */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-5xl px-4">
-          <SectionHeading title={t("chartTitle")} />
-          <div className="mt-12 overflow-x-auto rounded-2xl border border-neutral-200 bg-white">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-brand-mint">
-                  <TableHead className="text-brand-black">Size</TableHead>
-                  <TableHead className="text-brand-black">
-                    Ankle (cB)
-                  </TableHead>
-                  <TableHead className="text-brand-black">Calf (cC)</TableHead>
-                  <TableHead className="text-brand-black">
-                    Thigh (cG)
-                  </TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {sizes.map((s) => (
-                  <TableRow key={s.size}>
-                    <TableCell className="font-semibold">{s.size}</TableCell>
-                    <TableCell>{s.ankle}</TableCell>
-                    <TableCell>{s.calf}</TableCell>
-                    <TableCell>{s.thigh}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+        <div className="mx-auto max-w-7xl px-4">
+          <SectionHeading
+            title={t("catalog.title")}
+            subtitle={t("catalog.subtitle")}
+          />
+          <div className="mt-12">
+            <ProductsCatalog />
           </div>
-          <p className="mt-4 text-sm text-neutral-500 text-center">
-            Chart is indicative. For custom-fit garments please contact our
-            team.
-          </p>
         </div>
       </section>
 
       {/* FAQ */}
       {/* @base-ui/react Accordion.Root uses `multiple` (default false = single open) */}
       {/* No `type` or `collapsible` props — single-open is the default behaviour */}
-      <section className="bg-neutral-50 py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <SectionHeading title={t("faqTitle")} />
           <Accordion className="mt-12">

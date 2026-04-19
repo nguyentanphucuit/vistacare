@@ -59,7 +59,7 @@ function AboutPageContent() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-brand-mint/60 via-white to-white">
+      <section className="bg-gradient-to-br from-brand-navy-light via-white to-brand-green-light">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:py-24 lg:grid-cols-2 lg:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-brand-mint">
             <Image
@@ -72,10 +72,10 @@ function AboutPageContent() {
             />
           </div>
           <div>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-brand-black leading-[1.1]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-brand-navy leading-[1.1]">
               {t("heroTitle")}
             </h1>
-            <p className="mt-6 text-base md:text-lg text-neutral-700 leading-relaxed">
+            <p className="mt-6 text-lg md:text-xl text-neutral-700 leading-relaxed">
               {t("heroBody")}
             </p>
           </div>
@@ -185,7 +185,7 @@ function AboutPageContent() {
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-5xl px-4">
           <div className="rounded-2xl border border-neutral-200 bg-white p-8 md:p-12 shadow-sm">
-            <h3 className="text-2xl font-semibold text-brand-black">
+            <h3 className="text-2xl font-semibold text-brand-navy">
               {tContact("company")}
             </h3>
             <dl className="mt-6 grid gap-4 md:grid-cols-2">
