@@ -16,7 +16,7 @@ export function ContactCTABlock() {
         {t("contactNow")}
       </Link>
       <a
-        href={`tel:${site.phones.zalo}`}
+        href={`tel:${site.phones.zalo.replace(/\s/g, "")}`}
         className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
       >
         <Phone className="h-4 w-4" aria-hidden="true" />

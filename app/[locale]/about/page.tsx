@@ -34,17 +34,17 @@ function AboutPageContent() {
     {
       icon: Heart,
       title: "Two decades of expertise",
-      body: "Having background of more than Two decades of experience in Compression Garments, we combine manufacturing expertise with local insight to provide clinically effective, affordable, and comfortable compression therapy solutions with technology from India and made for Vietnamese market.",
+      body: "Having background of more than Two decades of experience in Compression Garments, we combine manufacturing expertise with local insight to provide clinically effective, affordable, and comfortable compression therapy solutions with technology from India having developed specially engineered cotton rich fabric suitable for Vietnamese weather conditions.",
     },
     {
       icon: Users,
       title: "Trusted by medical professionals",
-      body: "We serve hospitals, clinics, pharmacies, and healthcare professionals with CE-compliant compression garments optimized to match individual medical needs for conditions like varicose veins, diabetes, and post-surgical recovery.",
+      body: "Backed by clinical trials in Vietnam, we have the trust of medical professional of Vietnam, We serve hospitals, clinics, pharmacies, and healthcare professionals with medical garments optimized to match individual medical needs for conditions like varicose veins, vascular disorders, oedema and post-surgical recovery. Our medical compression garments are  manufacturd at a facility with ISO 13485 & CE certifications,.",
     },
   ];
 
   const whatWeDo = [
-    "Medical compression stockings (Class I & II)",
+    "Medical compression stockings (Class I & II) conforming to RAL-GZ-387 standards",
     "Regular/Standard ones optimized to fit all anatomies",
     "Custom-fitted compression garments for post-operative recovery",
     "Body sleeves and limb garments for DVT, varicose veins, lymphoedema, and post-burn keloids",
@@ -194,7 +194,7 @@ function AboutPageContent() {
                 <div>
                   <dt className="text-sm text-neutral-500">{tContact("zalo")}</dt>
                   <dd className="font-medium">
-                    <a href={`tel:${site.phones.zalo}`}>{site.phones.zalo}</a>
+                    <a href={`tel:${site.phones.zalo.replace(/\s/g, "")}`}>{site.phones.zalo}</a>
                   </dd>
                 </div>
               </div>
@@ -203,7 +203,16 @@ function AboutPageContent() {
                 <div>
                   <dt className="text-sm text-neutral-500">{tContact("whatsapp")}</dt>
                   <dd className="font-medium">
-                    <a href={`tel:${site.phones.whatsapp}`}>{site.phones.whatsapp}</a>
+                    <a href={`tel:${site.phones.whatsapp.replace(/\s/g, "")}`}>{site.phones.whatsapp}</a>
+                  </dd>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="mt-1 h-5 w-5 text-brand-leaf" aria-hidden="true" />
+                <div>
+                  <dt className="text-sm text-neutral-500">{tContact("phone")}</dt>
+                  <dd className="font-medium">
+                    <a href={`tel:${site.phones.phone.replace(/\s/g, "")}`}>{site.phones.phone}</a>
                   </dd>
                 </div>
               </div>

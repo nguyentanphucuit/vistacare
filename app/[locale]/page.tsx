@@ -21,6 +21,16 @@ export default async function HomePage({
 function HomePageContent() {
   const t = useTranslations("home");
   const tCta = useTranslations("cta");
+  const tNav = useTranslations("nav");
+
+  const whyShouldUseItems = [
+    "Varicose Veins",
+    "Pregnancy",
+    "Long Sitting / Standing",
+    "Post-Surgical Recovery",
+    "Athletes & Travel",
+    "Elderly & DVT Prevention",
+  ];
 
   const products = [
     {
@@ -82,10 +92,10 @@ function HomePageContent() {
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
-                href="/products"
+                href="/about"
                 className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
               >
-                {tCta("knowMore")}
+                {tNav("about")}
               </Link>
             </div>
           </div>
@@ -102,33 +112,36 @@ function HomePageContent() {
         </div>
       </section>
 
-      {/* 2. About Us */}
+      {/* 2. Why should use stocking? */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:items-center">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-mint">
-            <Image
-              src="/placeholder.svg"
-              alt="Vistaar International CG manufacturing facility"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-sm font-medium uppercase tracking-wider text-brand-leaf">
-              About Vista Care
-            </p>
-            <p className="mt-4 text-xl text-neutral-700 leading-relaxed">
-              {t("aboutSnippet")}
-            </p>
-            <Link
-              href="/about"
-              className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-brand-navy hover:text-brand-leaf"
-            >
-              {tCta("knowMoreAboutUs")}
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
+        <div className="mx-auto max-w-7xl px-4">
+          <SectionHeading
+            title={t("whyShouldUseTitle")}
+            subtitle={t("whyShouldUseSubtitle")}
+          />
+          <ul
+            className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-6 md:gap-6 md:overflow-visible"
+          >
+            {whyShouldUseItems.map((item, i) => (
+              <li
+                key={i}
+                className="shrink-0 basis-[70%] snap-start sm:basis-[45%] md:basis-auto"
+              >
+                <div className="relative aspect-[904/1280] w-full overflow-hidden rounded-2xl bg-brand-mint">
+                  <Image
+                    src={`/images/whyshoulduse/${i + 1}.jpg`}
+                    alt={item}
+                    fill
+                    sizes="(max-width: 768px) 70vw, 16vw"
+                    className="object-contain transition duration-300 hover:scale-[1.03]"
+                  />
+                </div>
+                <p className="mt-3 text-center text-base font-medium text-brand-navy">
+                  {item}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

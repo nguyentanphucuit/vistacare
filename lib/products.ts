@@ -13,198 +13,151 @@ export type Product = {
 };
 
 export const categories: ProductCategory[] = [
-  { id: "below-knee", label: "Below Knee Stockings" },
-  { id: "thigh-high", label: "Thigh High Stockings" },
-  { id: "full-leg", label: "Full Leg & Waist-High" },
-  { id: "arm-sleeves", label: "Arm Sleeves & Gauntlets" },
-  { id: "body-garments", label: "Body Garments" },
-  { id: "accessories", label: "Accessories" },
+  { id: "below-knee", label: "Below Knee" },
+  { id: "knee-high", label: "Knee High" },
+  { id: "thigh-high", label: "Thigh High" },
+  { id: "full-leg", label: "Full Leg" },
+  { id: "pantyhose", label: "Pantyhose" },
+  { id: "armsleeve", label: "Armsleeve" },
+  { id: "vest", label: "Vest" },
+  { id: "body-suit", label: "Body Suit" },
+  { id: "chin-support", label: "Chin Support" },
 ];
 
 export const products: Product[] = [
   {
-    slug: "below-knee-class-i-open-toe",
-    name: "Below Knee — Class I, Open Toe",
+    slug: "below-knee",
+    name: "Below Knee",
     category: "below-knee",
-    compressionClass: "I",
+    compressionClass: "I & II",
     description:
-      "Graduated 15–20 mmHg compression for daily wear, travel, and mild venous symptoms.",
-    image: "/placeholder.svg",
+      "Graduated compression below the knee for daily wear, travel, and varicose vein management.",
+    image: "/images/products/below-knee.png",
   },
   {
-    slug: "below-knee-class-i-closed-toe",
-    name: "Below Knee — Class I, Closed Toe",
-    category: "below-knee",
-    compressionClass: "I",
+    slug: "knee-high",
+    name: "Knee High",
+    category: "knee-high",
+    compressionClass: "I & II",
     description:
-      "Closed-toe Class I stocking with reinforced heel for everyday prevention.",
-    image: "/placeholder.svg",
+      "Classic knee-high compression stocking for everyday therapeutic wear.",
+    image: "/images/products/knee-high.webp",
   },
   {
-    slug: "below-knee-class-ii-open-toe",
-    name: "Below Knee — Class II, Open Toe",
-    category: "below-knee",
+    slug: "knee-high-2",
+    name: "Knee High 2",
+    category: "knee-high",
     compressionClass: "II",
     description:
-      "20–30 mmHg medical compression prescribed for varicose veins and oedema.",
-    image: "/placeholder.svg",
+      "Alternative knee-high design with reinforced heel for enhanced durability.",
+    image: "/images/products/knee-high-2.webp",
   },
   {
-    slug: "below-knee-class-ii-closed-toe",
-    name: "Below Knee — Class II, Closed Toe",
-    category: "below-knee",
-    compressionClass: "II",
-    description:
-      "Therapeutic closed-toe stocking for post-surgical recovery and DVT prevention.",
-    image: "/placeholder.svg",
-  },
-  {
-    slug: "athletic-below-knee",
-    name: "Athletic Below Knee Sleeve",
-    category: "below-knee",
-    compressionClass: "I",
-    description:
-      "Breathable performance sleeve for runners, travellers, and long-shift professionals.",
-    image: "/placeholder.svg",
-  },
-
-  {
-    slug: "thigh-high-class-i-open-toe",
-    name: "Thigh High — Class I, Open Toe",
+    slug: "thigh-high",
+    name: "Thigh High",
     category: "thigh-high",
-    compressionClass: "I",
+    compressionClass: "I & II",
     description:
-      "Silicone-band thigh high with light graduated compression for preventive use.",
-    image: "/placeholder.svg",
+      "Silicone-band thigh high (also known as Above Knee) for advanced venous insufficiency and post-surgical recovery.",
+    image: "/images/products/thigh-high.webp",
   },
   {
-    slug: "thigh-high-class-i-closed-toe",
-    name: "Thigh High — Class I, Closed Toe",
-    category: "thigh-high",
-    compressionClass: "I",
-    description:
-      "Closed-toe thigh high with anti-slip band for all-day comfort.",
-    image: "/placeholder.svg",
-  },
-  {
-    slug: "thigh-high-class-ii-open-toe",
-    name: "Thigh High — Class II, Open Toe",
+    slug: "thigh-high-2",
+    name: "Thigh High 2",
     category: "thigh-high",
     compressionClass: "II",
     description:
-      "Medical-grade thigh high for advanced venous insufficiency and lymphoedema.",
-    image: "/placeholder.svg",
+      "Alternative thigh-high design with plain top and extended length.",
+    image: "/images/products/thigh-high-2.webp",
   },
   {
-    slug: "thigh-high-class-ii-closed-toe",
-    name: "Thigh High — Class II, Closed Toe",
-    category: "thigh-high",
-    compressionClass: "II",
-    description:
-      "Therapeutic closed-toe for recovery programs and chronic venous disease.",
-    image: "/placeholder.svg",
-  },
-  {
-    slug: "anti-embolism-thigh-high",
-    name: "Anti-Embolism Thigh High",
-    category: "thigh-high",
-    compressionClass: "I",
-    description:
-      "Inspection-window design, 18 mmHg, for hospitalised and bedridden patients.",
-    image: "/placeholder.svg",
-  },
-
-  {
-    slug: "maternity-pantyhose-class-i",
-    name: "Maternity Pantyhose — Class I",
-    category: "full-leg",
-    compressionClass: "I",
-    description:
-      "Expandable abdominal panel to support pregnancy-related swelling and fatigue.",
-    image: "/placeholder.svg",
-  },
-  {
-    slug: "waist-high-class-ii",
-    name: "Waist High — Class II",
-    category: "full-leg",
-    compressionClass: "II",
-    description:
-      "Full-leg 20–30 mmHg stocking for bilateral venous disorders.",
-    image: "/placeholder.svg",
-  },
-  {
-    slug: "custom-full-leg",
-    name: "Custom Full Leg Stocking",
+    slug: "full-leg",
+    name: "Full Leg",
     category: "full-leg",
     compressionClass: "I & II",
     description:
-      "Made-to-measure full-leg garment for complex lymphoedema and vascular cases.",
-    image: "/placeholder.svg",
-  },
-
-  {
-    slug: "arm-sleeve-class-i",
-    name: "Arm Sleeve — Class I",
-    category: "arm-sleeves",
-    compressionClass: "I",
-    description:
-      "Light compression arm sleeve for lymphoedema maintenance and upper-limb recovery.",
-    image: "/placeholder.svg",
+      "Full-leg compression stocking for bilateral venous disorders and complex lymphoedema.",
+    image: "/images/products/full-leg.webp",
   },
   {
-    slug: "arm-sleeve-class-ii",
-    name: "Arm Sleeve — Class II",
-    category: "arm-sleeves",
+    slug: "full-leg-2",
+    name: "Full Leg 2",
+    category: "full-leg",
     compressionClass: "II",
     description:
-      "Firm medical-grade sleeve for post-mastectomy and advanced lymphoedema care.",
-    image: "/placeholder.svg",
+      "Alternative full-leg design with reinforced compression zones.",
+    image: "/images/products/full-leg-2.webp",
   },
   {
-    slug: "compression-gauntlet",
-    name: "Compression Gauntlet",
-    category: "arm-sleeves",
+    slug: "full-body-pantyhose",
+    name: "Full Body Pantyhose",
+    category: "pantyhose",
     compressionClass: "I & II",
     description:
-      "Hand & wrist gauntlet to pair with an arm sleeve for full upper-limb compression.",
-    image: "/placeholder.svg",
+      "Full-body pantyhose compression suit for maternity, bilateral venous support, and comprehensive lower-body coverage.",
+    image: "/images/products/full-pantyhose.webp",
   },
-
   {
-    slug: "post-burn-keloid-vest",
-    name: "Post-Burn Keloid Vest",
-    category: "body-garments",
+    slug: "armsleeve",
+    name: "Armsleeve",
+    category: "armsleeve",
+    compressionClass: "I & II",
+    description:
+      "Medical-grade armsleeve for upper-limb lymphoedema and post-mastectomy care.",
+    image: "/images/products/arm-sleeve.png",
+  },
+  {
+    slug: "full-body-suit",
+    name: "Full Body Suit",
+    category: "body-suit",
     compressionClass: "II",
     description:
-      "Custom-fit vest to manage post-burn scarring and keloid formation.",
-    image: "/placeholder.svg",
+      "Full-body compression suit for post-surgical recovery and burn scar management.",
+    image: "/images/products/full-body-suit.webp",
   },
   {
-    slug: "abdominal-binder",
-    name: "Post-Surgical Abdominal Binder",
-    category: "body-garments",
+    slug: "male-vest",
+    name: "Male Vest",
+    category: "vest",
     compressionClass: "I",
     description:
-      "Adjustable binder to support the abdomen after surgery or liposuction.",
-    image: "/placeholder.svg",
+      "Upper-body compression vest tailored for men — chest, shoulder, and abdomen support.",
+    image: "/images/products/male-vest.jpeg",
   },
   {
-    slug: "lymphoedema-bra",
-    name: "Lymphoedema Compression Bra",
-    category: "body-garments",
+    slug: "women-vest",
+    name: "Women Vest",
+    category: "vest",
     compressionClass: "I",
     description:
-      "Clinically designed bra for post-mastectomy and truncal lymphoedema management.",
-    image: "/placeholder.svg",
+      "Upper-body compression vest tailored for women with contoured fit.",
+    image: "/images/products/female-vest.jpeg",
   },
-
   {
-    slug: "donning-glove",
-    name: "Donning Glove",
-    category: "accessories",
+    slug: "sculpt-spine-support-body-suit",
+    name: "Sculpt & Spine Support Body Suit",
+    category: "body-suit",
+    compressionClass: "II",
+    description:
+      "Custom-fit body suit with spine support for post-operative rehabilitation.",
+    image: "/images/products/sculpt-spine-body-suit.webp",
+  },
+  {
+    slug: "sculpt-support-body-suit",
+    name: "Sculpt Support Body Suit",
+    category: "body-suit",
+    compressionClass: "II",
+    description:
+      "Body suit focused on abdominal and back support after liposuction or surgery.",
+    image: "/images/products/sculpt-support-body-suit.webp",
+  },
+  {
+    slug: "chin-support",
+    name: "Chin Support",
+    category: "chin-support",
     compressionClass: "I",
     description:
-      "Grip-enhanced glove that makes putting on compression stockings easier.",
-    image: "/placeholder.svg",
+      "Chin and neck compression wrap for post-facial-surgery support and healing.",
+    image: "/images/products/chin-support.webp",
   },
 ];

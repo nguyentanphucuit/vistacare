@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/accordion";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { ProductsCatalog } from "@/components/products/ProductsCatalog";
+import { fetchProducts } from "@/lib/products-server";
+import type { Product } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
 export default async function ProductsPage({
@@ -20,10 +22,11 @@ export default async function ProductsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <ProductsContent />;
+  const products = await fetchProducts();
+  return <ProductsContent products={products} />;
 }
 
-function ProductsContent() {
+function ProductsContent({ products }: { products: Product[] }) {
   const t = useTranslations("products");
   const tCta = useTranslations("cta");
 
@@ -105,7 +108,7 @@ function ProductsContent() {
             subtitle={t("catalog.subtitle")}
           />
           <div className="mt-12">
-            <ProductsCatalog />
+            <ProductsCatalog products={products} />
           </div>
         </div>
       </section>

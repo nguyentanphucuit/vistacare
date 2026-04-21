@@ -2,7 +2,7 @@
   "nav": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
-    "howToOrder": "Cách đặt hàng?",
+    "howToOrder": "Cách chọn sản phẩm?",
     "products": "Sản phẩm",
     "measurement": "Đo kích thước",
     "contactUs": "Liên hệ",
@@ -24,6 +24,8 @@
     "heroBody": "Trusted by medical professionals and individuals across India and Vietnam. Vista Care Compression Garments are designed to promote better circulation, reduce swelling, and accelerate healing.",
     "aboutSnippet": "We at Vistaar International CG Co. Ltd are manufactures of Vista Care Brand of Compression Garments. We have more than Two decades of experience in manufacture medical-grade (Class I & II) stockings and sleeves designed to support blood circulation, reduce swelling, and accelerate recovery from a wide range of venous disorders and lymphatic conditions.",
     "whoShouldUseTitle": "Ai nên dùng vớ áp lực?",
+    "whyShouldUseTitle": "Vì sao nên dùng vớ áp lực?",
+    "whyShouldUseSubtitle": "Áp lực có cấp độ hỗ trợ tuần hoàn, giảm sưng và tăng tốc hồi phục trong nhiều tình huống y khoa và sinh hoạt hằng ngày.",
     "whyChooseTitle": "Vì sao chọn Vista Care?",
     "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
     "productRangeIntro": "Chúng tôi sản xuất vớ áp lực Class I và Class II với nhiều dòng sản phẩm:",
@@ -125,6 +127,7 @@
       "company": "Vistaar International CG Co. Ltd",
       "zalo": "Zalo",
       "whatsapp": "WhatsApp",
+      "phone": "Điện thoại",
       "email": "Email",
       "website": "Website",
       "addresses": "Văn phòng"

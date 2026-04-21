@@ -20,10 +20,11 @@ export function VistaCareLogo({
       <Image
         src="/logo.png"
         alt="Vista Care"
-        width={width}
-        height={height}
+        width={width * 2}
+        height={height * 2}
+        quality={95}
+        unoptimized
         priority
-        className="h-auto w-auto"
         style={{ height, width: "auto" }}
       />
       {showTagline && (

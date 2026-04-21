@@ -42,12 +42,26 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = (values: ContactValues) => {
-    console.log("contact submission", values);
-    toast.success(t("successTitle"), {
-      description: t("successBody"),
-    });
-    form.reset();
+  const onSubmit = async (values: ContactValues) => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        throw new Error(j.detail ?? j.error ?? "Failed to submit");
+      }
+      toast.success(t("successTitle"), {
+        description: t("successBody"),
+      });
+      form.reset();
+    } catch (err) {
+      toast.error("Submission failed", {
+        description: err instanceof Error ? err.message : "Please try again.",
+      });
+    }
   };
 
   return (

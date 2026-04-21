@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "howToOrder": "How to order?",
+    "howToOrder": "How to choose?",
     "products": "Products",
     "measurement": "Measurement",
     "contactUs": "Contact Us",
@@ -18,12 +18,14 @@
     "emailUs": "Email Us"
   },
   "home": {
-    "heroEyebrow": "Medical Compression Garments",
+    "heroEyebrow": "Vista Care Medical Compression Garments",
     "heroTitle": "COMFORT THAT HEALS",
     "heroSubtitle": "Engineered for Graduated Compression. Enhanced Recovery. Everyday Comfort.",
-    "heroBody": "Trusted by medical professionals and individuals across India and Vietnam. Vista Care Compression Garments are designed to promote better circulation, reduce swelling, and accelerate healing.",
+    "heroBody": "Trusted by medical professionals and individuals across the world. Vista Care Compression Garments are designed to promote better circulation, reduce swelling, and accelerate healing.",
     "aboutSnippet": "We at Vistaar International CG Co. Ltd are manufactures of Vista Care Brand of Compression Garments. We have more than Two decades of experience in manufacture medical-grade (Class I & II) stockings and sleeves designed to support blood circulation, reduce swelling, and accelerate recovery from a wide range of venous disorders and lymphatic conditions.",
     "whoShouldUseTitle": "Who Should Use Compression Garments?",
+    "whyShouldUseTitle": "Why Should You Use Compression Stockings?",
+    "whyShouldUseSubtitle": "Graduated compression supports circulation, reduces swelling, and accelerates recovery across many everyday and clinical situations.",
     "whyChooseTitle": "Why Choose Vista Care?",
     "whyChooseIntro": "At Vista Care, we go beyond generic solutions. Our compression garments are optimal sized for all age groups to match your specific medical preventive needs.",
     "productRangeIntro": "We manufacture Class I & Class II compression garments in multiple ranges:",
@@ -34,7 +36,7 @@
     "videoTitle": "Experience the Power of Medical Compression"
   },
   "about": {
-    "heroTitle": "More than Two decades of Experience in Healing Through Compression Garments",
+    "heroTitle": "More than Two decades of Experience in Healing Through Compression Therapy",
     "heroBody": "At Vista Care, we don't just manufacture compression garments — we deliver therapeutic solutions backed by two decades of clinical insight and compassionate care, to enhance recovery, prevent complications, and improve quality of life through precise, medical-grade compression garments designed for real comfort and quick healing.",
     "whatWeDoTitle": "What We Do",
     "whatWeDoIntro": "We design and manufacture:",
@@ -42,13 +44,13 @@
     "approachTitle": "Our Approach",
     "approachSubtitle": "Our process is rooted in clinical precision and personal care",
     "promiseTitle": "Our Promise",
-    "promiseIntro": "Whether it's managing chronic conditions or aiding post-surgical recovery, we are committed to:",
+    "promiseIntro": "Whether it's providing everyday comfort, managing chronic conditions or aiding post-surgical recovery, we are committed to:",
     "presenceTitle": "Our Presence",
     "presenceBody": "Headquartered in Mumbai, with operations in New Delhi and now in Ho Chi Minh City, Vietnam, Vista Care is evolving into a global compression care provider, serving patients, medical professionals, and wellness centers."
   },
   "howToOrder": {
-    "heroTitle": "How to order Vista Care compression garments",
-    "heroBody": "Choose your product, take the right measurements, fill the order form, and we will handle the rest — from fitting advice to delivery.",
+    "heroTitle": "How to choose the right Vista Care compression garment for you?",
+    "heroBody": "Choose your product, take the right measurements, see the standard measurements chart and choose the size that fits you. In case you need custom size garment, click on the appropriate measurement form, fill up all the details, and we will handle the rest — from fitting advice to delivery. You may see \"How to take measurements\" tutorial before filling up the form",
     "catalogTitle": "1. Browse the catalog",
     "catalogSubtitle": "Explore our full range of medical-grade compression garments.",
     "howToChooseTitle": "2. How to choose the right product",
@@ -93,7 +95,7 @@
     "chartNote": "Chart is indicative. For custom-fit garments please contact our team."
   },
   "products": {
-    "heroTitle": "Medical Compression Garments That Fits You, Heals You with Comfort.",
+    "heroTitle": "Medical Compression Garments That Fit Your size, Heal You with Comfort.",
     "chartTitle": "Compression Garment Measurement Chart",
     "faqTitle": "Frequently Asked Questions",
     "catalog": {
@@ -125,6 +127,7 @@
       "company": "Vistaar International CG Co. Ltd",
       "zalo": "Zalo",
       "whatsapp": "WhatsApp",
+      "phone": "Phone",
       "email": "Email",
       "website": "Website",
       "addresses": "Our Offices"

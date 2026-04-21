@@ -6,8 +6,9 @@ export const site = {
   website: "vistacare.com.vn",
   websiteUrl: "https://vistacare.com.vn",
   phones: {
-    zalo: "+919702604473",
-    whatsapp: "+919702274689",
+    zalo: "+91 9702404473",
+    whatsapp: "+91 9702274489",
+    phone: "+84 938 981 039",
   },
   offices: [
     { city: "Mumbai", country: "India" },
@@ -23,7 +24,8 @@ export const site = {
 
 export const navItems = [
   { key: "home", href: "/" },
+  { key: "about", href: "/about" },
   { key: "products", href: "/products" },
-  { key: "howToOrder", href: "/how-to-order" },
+  { key: "howToOrder", href: "/how-to-choose" },
   { key: "measurement", href: "/measurement" },
 ] as const;

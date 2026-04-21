@@ -3,23 +3,17 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { buttonVariants } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { ProductsCatalog } from "@/components/products/ProductsCatalog";
-import { OrderForm } from "@/components/order/OrderForm";
-import { categories } from "@/lib/products";
+import { fetchProducts } from "@/lib/products-server";
+import type { Product } from "@/lib/products";
+import { OrderFormsGrid } from "@/components/order/OrderFormsGrid";
 import { cn } from "@/lib/utils";
 import {
   Stethoscope,
   Ruler,
   ShieldCheck,
   PlayCircle,
-  FileText,
   ArrowRight,
 } from "lucide-react";
 
@@ -30,10 +24,11 @@ export default async function HowToOrderPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <HowToOrderContent />;
+  const products = await fetchProducts();
+  return <HowToOrderContent products={products} />;
 }
 
-function HowToOrderContent() {
+function HowToOrderContent({ products }: { products: Product[] }) {
   const t = useTranslations("howToOrder");
   const tCta = useTranslations("cta");
 
@@ -54,21 +49,6 @@ function HowToOrderContent() {
       body: "Class I (15–20 mmHg) for prevention and light symptoms, Class II (20–30 mmHg) for medical-grade therapy.",
     },
   ];
-
-  const formIntros: Record<string, string> = {
-    "below-knee":
-      "Required measurements: ankle (cB), calf (cC), leg length (lD). Specify Class I or II and open vs. closed toe.",
-    "thigh-high":
-      "Required: ankle (cB), calf (cC), thigh (cG), leg length (lG). Choose silicone-band vs. plain top.",
-    "full-leg":
-      "Required: ankle, calf, thigh, waist, hip, and full length from heel to waist. Indicate bilateral or single-leg.",
-    "arm-sleeves":
-      "Required: wrist, forearm, upper arm, and arm length. Gauntlet requires palm and thumb circumferences.",
-    "body-garments":
-      "For post-burn vests, abdominal binders, or lymphoedema bras — includes a full-torso measurement set.",
-    accessories:
-      "Donning gloves, stocking aids, and replacement bands. Select size (S/M/L) and quantity.",
-  };
 
   const tutorialSteps = [
     {
@@ -151,7 +131,7 @@ function HowToOrderContent() {
             subtitle={t("catalogSubtitle")}
           />
           <div className="mt-12">
-            <ProductsCatalog />
+            <ProductsCatalog products={products} />
           </div>
         </div>
       </section>
@@ -198,34 +178,16 @@ function HowToOrderContent() {
         </div>
       </section>
 
-      {/* 3. Order forms (6 accordions, each with inline submit form) */}
+      {/* 3. Order forms — click each card to open the form modal */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-4">
+        <div className="mx-auto max-w-7xl px-4">
           <SectionHeading
             title={t("formsTitle")}
             subtitle={t("formsSubtitle")}
           />
-          <Accordion className="mt-12">
-            {categories.map((c) => (
-              <AccordionItem key={c.id} value={c.id}>
-                <AccordionTrigger className="text-left text-base font-medium">
-                  <span className="flex items-center gap-3">
-                    <FileText
-                      className="h-4 w-4 text-brand-navy"
-                      aria-hidden="true"
-                    />
-                    {c.label} Order Form
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="flex flex-col gap-5 text-neutral-700">
-                    <p>{formIntros[c.id]}</p>
-                    <OrderForm categoryId={c.id} />
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <div className="mt-12">
+            <OrderFormsGrid />
+          </div>
         </div>
       </section>
 

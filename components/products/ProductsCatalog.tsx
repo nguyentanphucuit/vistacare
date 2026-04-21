@@ -19,21 +19,22 @@ import {
 } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
 import { buttonVariants } from "@/components/ui/button";
-import { categories, products } from "@/lib/products";
+import { categories, type Product } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
 const ALL = "all";
 const PAGE_SIZE = 6;
 
-export function ProductsCatalog() {
+export function ProductsCatalog({ products }: { products: Product[] }) {
   const t = useTranslations("products.catalog");
+  const list = products;
   const [selected, setSelected] = useState<string>(ALL);
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return products.filter((p) => {
+    return list.filter((p) => {
       if (selected !== ALL && p.category !== selected) return false;
       if (!q) return true;
       return (
@@ -41,7 +42,7 @@ export function ProductsCatalog() {
         p.description.toLowerCase().includes(q)
       );
     });
-  }, [selected, query]);
+  }, [selected, query, list]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
 
@@ -59,12 +60,12 @@ export function ProductsCatalog() {
   }, [filtered, page]);
 
   const countsByCategory = useMemo(() => {
-    const map: Record<string, number> = { [ALL]: products.length };
-    for (const p of products) {
+    const map: Record<string, number> = { [ALL]: list.length };
+    for (const p of list) {
       map[p.category] = (map[p.category] ?? 0) + 1;
     }
     return map;
-  }, []);
+  }, [list]);
 
   const sidebar = (
     <nav aria-label={t("filterByCategory")} className="flex flex-col gap-1">
@@ -292,27 +293,27 @@ function CategoryButton({
 function ProductCard({
   product,
 }: {
-  product: (typeof products)[number];
+  product: Product;
 }) {
   return (
-    <article className="group h-full overflow-hidden rounded-2xl border border-neutral-200/70 bg-white transition duration-300 hover:-translate-y-1 hover:border-brand-mint-dark hover:shadow-xl">
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-mint">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200/70 bg-white transition duration-300 hover:-translate-y-1 hover:border-brand-mint-dark hover:shadow-xl">
+      <div className="relative aspect-[3/4] w-full overflow-hidden bg-brand-mint">
         <Image
           src={product.image}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
-          className="object-cover transition duration-300 group-hover:scale-[1.03]"
+          className="object-contain p-4 transition duration-300 group-hover:scale-[1.03]"
         />
         <span className="absolute left-3 top-3 rounded-full bg-brand-navy px-2.5 py-1 text-xs font-semibold text-white">
           Class {product.compressionClass}
         </span>
       </div>
-      <div className="flex h-[calc(100%-theme(spacing.32))] flex-col gap-3 p-5">
+      <div className="flex flex-1 flex-col gap-3 p-5">
         <h3 className="text-lg font-semibold text-brand-navy leading-snug">
           {product.name}
         </h3>
-        <p className="flex-1 text-xl text-neutral-600 leading-relaxed">
+        <p className="flex-1 text-base text-neutral-600 leading-relaxed">
           {product.description}
         </p>
       </div>
